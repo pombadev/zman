@@ -5,31 +5,12 @@ zman() {
 	readonly ZMAN_LIB=$ZMAN_HOME/lib
 
 	help() {
-		cat << END
-zman 0.1.0
-Barebone zsh plugin manager.
-
-Usage:
-	zman <command> [options]
-
-Options:
-	h|help					Show this screen
-	u|update				Recursively update all modules
-	use <module>				Module to use eg: 'directory/file.zsh'
-	a|add <module>				Add a new module (aka gitlab/github url)
-	r|remove <module>			Remove a module (aka directory's name)
-
-Examples:
-	zman add https://(github|gitlab).com/<user>/<module>.git
-	zman remove <module>
-
-zman and plugins are installed in $HOME/.zman unless \$ZMAN_HOME is specified otherwise.
-END
+		cat $ZMAN_HOME/help.txt
 	}
 
 	init() {
 		# source all the files in `lib`
-		source <(cat "$ZMAN_LIB"/*)
+		source <(cat "$ZMAN_LIB"/*.zsh)
 	}
 
 	add() {
