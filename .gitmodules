@@ -1,6 +1,3 @@
-[submodule "geometry"]
-	path = geometry
-	url = https://github.com/geometry-zsh/geometry.git
 [submodule "zsh-colored-man-pages"]
 	path = zsh-colored-man-pages
 	url = https://github.com/ael-code/zsh-colored-man-pages.git
@@ -10,12 +7,6 @@
 [submodule "zsh-history-substring-search"]
 	path = zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "spaceship-prompt"]
-	path = spaceship-prompt
-	url = https://github.com/denysdovhan/spaceship-prompt.git
-[submodule "powerlevel9k"]
-	path = powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
-[submodule "zsh-clean"]
-	path = zsh-clean
-	url = https://github.com/BrandonRoehl/zsh-clean.git
+[submodule "sublime"]
+	path = sublime
+	url = https://github.com/pjmp/sublime.git
