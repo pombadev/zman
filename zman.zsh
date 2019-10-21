@@ -39,17 +39,17 @@ zman() {
 
 	case "$1" in
 		u|update)
-			{ cd "$ZMAN_HOME" && update && cd - 1> /dev/null }
+			( cd "$ZMAN_HOME" && update 1> /dev/null )
 		;;
 
 		a|add)
 			shift
-			{ cd "$ZMAN_HOME" && add "$@" && cd - 1> /dev/null }
+			( cd "$ZMAN_HOME" && add "$@" 1> /dev/null )
 		;;
 
 		r|remove)
 			shift
-			{ cd "$ZMAN_HOME" && remove "$@" && cd - 1> /dev/null }
+			( cd "$ZMAN_HOME" && remove "$@" 1> /dev/null )
 		;;
 
 		use)
