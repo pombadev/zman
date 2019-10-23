@@ -17,5 +17,5 @@
 	curl --compressed -o- -L \
 		https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/key-bindings.zsh > "$ZMAN_LIB"/key-bindings.zsh
 
-	echo "source $ZMAN_HOME/zman.zsh" >> ~/.zshrc
+	echo "\nsource $ZMAN_HOME/zman.zsh" >> ~/.zshrc
 )
